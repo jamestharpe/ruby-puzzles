@@ -6,7 +6,7 @@
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the
 # even-valued terms.
 
-fiberator = Enumerator.new do |current_num|
+fibonacciSequence = Enumerator.new do |current_num|
   current_num.yield first_num = 1
   current_num.yield second_num = 2
   while true
@@ -18,7 +18,7 @@ fiberator = Enumerator.new do |current_num|
 end
 
 sum = 0
-while (number = fiberator.next()) < 4_000_000 do
+while (number = fibonacciSequence.next()) < 4_000_000 do
   sum += number if (number % 2) == 0
 end
 
