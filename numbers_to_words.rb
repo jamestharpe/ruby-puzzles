@@ -1,7 +1,7 @@
 # Write a method to convert a positive integer to words. For example: 7,654,321 return "seven million six hundred
 # fifty four thousand three hundred twenty one"
 
-class Fixnum
+class Numeric
   def to_words
     words_for_1_through_19 = {
         0 => '', 1 => 'one', 2 => 'two', 3 => 'three', 4 => 'four', 5 => 'five', 6 => 'six', 7 => 'seven', 8 => 'eight',
@@ -44,6 +44,7 @@ puts "\n1,234,567,890,123,456 " + 1234567890123456.to_words
 puts "\n12,345,678,901,234,567 " + 12345678901234567.to_words
 puts "\n123,456,789,012,345,678 " + 123456789012345678.to_words
 puts "\n1,234,567,890,123,456,789 " + 1234567890123456789.to_words
-# Too Big # puts "\n12,345,678,901,234,567,890 " + 12345678901234567890.to_words
+puts "\n12,345,678,901,234,567,890 " + 12345678901234567890.to_words
+puts "\n123,456,789,012,345,678,901 " + 123456789012345678901.to_words
 
 puts gets.to_i.to_words

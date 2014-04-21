@@ -1,7 +1,7 @@
 # Write a method to determine if a given positive integer is "happy". A number is happy if the sum of the square of its
 # digits eventually returns one. A number is not happy if it ends up in an infinite loop.
 
-class Fixnum
+class Numeric
   @@happies = { 1 => nil }
   @@unhappies = Hash.new
 
